@@ -15,7 +15,7 @@ class ProfileFactory(factory.Factory):
     class Meta:
         model = app.Profile
 
-    age = factory.fuzzy.FuzzyInteger(18, 65)
+    age = factory.fuzzy.FuzzyInteger(0, 65)
     sex = factory.Iterator([True, False])
 
 

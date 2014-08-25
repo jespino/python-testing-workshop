@@ -11,9 +11,11 @@ class User:
         self.profile = profile
 
 class Profile:
-    age = 0
+    age = None
     sex = None
+    baby = None
 
     def __init__(self, age, sex):
         self.age = age
         self.sex = sex
+        self.baby = age < 3
